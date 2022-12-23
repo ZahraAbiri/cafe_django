@@ -27,5 +27,4 @@ class Orders(models.Model):
                               on_delete=models.CASCADE, null=True)
     order_menu = models.ManyToManyField(Menu_item)
 
-    def __str__(self):
-        return self.status
+
